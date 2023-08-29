@@ -39,7 +39,7 @@ export function Contacto (){
                                     <Form.Control as="textarea" rows={5} onChange={(e) => setFormulario({ ...formulario, mensaje: e.target.value})}/>
                                 </Form.Group>
 
-                                <Button variant="primary" type="submit">
+                                <Button variant="danger" type="submit">
                                     Enviar
                                 </Button>
                             </Form>  
@@ -54,7 +54,7 @@ export function Contacto (){
                             <Table striped bordered hover>
                                 <thead>
                                     <tr>
-                                    <th>Departamen</th>
+                                    <th>SECTOR</th>
                                     <th>Teléfono</th>
                                     </tr>
                                 </thead>
@@ -73,10 +73,38 @@ export function Contacto (){
                                     </tr>
                                 </tbody>
                                 </Table>
+                                <Card.Title>Correos Electrónicos Institucionales</Card.Title>
+                            <Table striped bordered hover>
+                                <thead>
+                                    <tr>
+                                    <th>Departamento</th>
+                                    <th>Correo electronico</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Secretaria de Extensión Universitaria</td>
+                                        <td>informes.fcad@uner.edu.ar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Oficina de Becas</td>
+                                        <td>estudiantes.fcad@uner.edu.ar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Oficina de ciencia y Técnica</td>
+                                        <td>oficinacyt.fcad@uner.edu.ar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Oficina de Pasantías</td>
+                                        <td>pasantias.fcad@uner.edu.ar</td>
+                                    </tr>
+                                </tbody>
+                                </Table>  
 
+                                <h6>Dirección:</h6>
                                 <p>
                                 Monseñor Tavella 1424. Concordia. CP(3200). | Provincia de Entre Ríos
-Teléfono: (+54) (345) 4231400 – Fax: (+54) (345) 4231410 | E-mail.: informes.fcad@uner.edu.ar
+Teléfono: (+54) (345) 4231400 – Fax: (+54) (345) 4231410 
                                 </p>
                         </Card.Body>
                         </Card>
