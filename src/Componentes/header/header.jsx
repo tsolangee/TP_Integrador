@@ -21,7 +21,7 @@ export function Header() {
             <Nav className="me-auto">            
               <Nav.Link as={Link} to='/Institucional'>Institucional</Nav.Link>
               <Nav.Link as={Link} to='/Contacto'>Contacto</Nav.Link>
-              <Nav.Link href='https://www.fcad.uner.edu.ar/'>FCAD</Nav.Link>
+              <Nav.Link href='https://www.fcad.uner.edu.ar/' target= "_blank">FCAD</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

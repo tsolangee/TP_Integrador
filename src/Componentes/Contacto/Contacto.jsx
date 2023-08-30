@@ -16,16 +16,16 @@ export function Contacto (){
             <div className="container mt-5">
                 <div className="row">
                     <div className="col-md-6">
-                        <Card>
+                        <Card bg={'dark'} text={'white'} border="danger">
                         <Card.Body>
-                            <Card.Title>Envianos tu consulta</Card.Title>
+                            <Card.Title>Para más consultas</Card.Title>
                             
                             <Form onSubmit={enviarInformacion}>
                                 <Form.Group className="mb-3" controlId="formBasicNombre">
                                     <Form.Label>Nombre y Apellido</Form.Label>
                                     <Form.Control type="text" onChange={(e) => setFormulario({ ...formulario, nombre:e.target.value })}/>
                                     <Form.Text className="text-muted">
-                                        No compartiremos tu correo.
+                                        Tu correo no será compartido.
                                     </Form.Text>
                                 </Form.Group>
 
@@ -48,10 +48,10 @@ export function Contacto (){
                     </div>
 
                     <div className="col-md-6">
-                    <Card>
+                    <Card border="dark">
                         <Card.Body>
-                            <Card.Title>Información Útil</Card.Title>
-                            <Table striped bordered hover>
+                            <Card.Title>Teléfonos Directos</Card.Title>
+                            <Table striped bordered hover variant="success">
                                 <thead>
                                     <tr>
                                     <th>SECTOR</th>
@@ -60,25 +60,37 @@ export function Contacto (){
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>operadora</td>
-                                        <td>421 0001</td>
+                                        <td>Alumnado</td>
+                                        <td>423 1421</td>
                                     </tr>
                                     <tr>
-                                        <td>decano</td>
-                                        <td>421 0002</td>
+                                        <td>Bedelía</td>
+                                        <td>423 1422</td>
                                     </tr>
                                     <tr>
-                                        <td>pasantías</td>
-                                        <td>421 0003</td>
+                                        <td>Biblioteca</td>
+                                        <td>423 1423</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bienestar Estudiantil</td>
+                                        <td>423 1437</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Centro de Estudiantes</td>
+                                        <td>423 1419</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Decano</td>
+                                        <td>423 1402</td>
                                     </tr>
                                 </tbody>
                                 </Table>
                                 <Card.Title>Correos Electrónicos Institucionales</Card.Title>
-                            <Table striped bordered hover>
+                            <Table striped bordered hover variant="success">
                                 <thead>
                                     <tr>
                                     <th>Departamento</th>
-                                    <th>Correo electronico</th>
+                                    <th>Correo electrónico</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -104,7 +116,7 @@ export function Contacto (){
                                 <h6>Dirección:</h6>
                                 <p>
                                 Monseñor Tavella 1424. Concordia. CP(3200). | Provincia de Entre Ríos
-Teléfono: (+54) (345) 4231400 – Fax: (+54) (345) 4231410 
+Teléfono: (+54) (345) 423 1400 
                                 </p>
                         </Card.Body>
                         </Card>
